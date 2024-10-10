@@ -15,3 +15,11 @@ def radixsort(array: list[int], num_length: int) -> list[int]:
         array = zero_array + one_array
         zero_array, one_array = [], []
     return array
+
+def main() -> None:
+    array: list = eval(input())
+    num_length: int = int(input())
+    radixsort(array, num_length)
+
+if __name__ == "__main__":
+    main()

@@ -7,3 +7,10 @@ def heapsort(array: list[int]) -> list[int]:
     for num in array:
         heappush(output, num)
     return [heappop(output) for _ in range(len(output))]
+
+def main() -> None:
+    array = eval(input())
+    
+
+if __name__ == "__main__":
+    main()
