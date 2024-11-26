@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Implementation of heapsort"""
 from heapq import heappop, heappush
 
@@ -10,7 +11,7 @@ def heapsort(array: list[int]) -> list[int]:
 
 def main() -> None:
     array = eval(input())
+    heapsort(array)
     
-
 if __name__ == "__main__":
     main()

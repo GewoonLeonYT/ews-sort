@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Implementation of LSD Radixsort"""
 def radixsort(array: list[int], num_length: int) -> list[int]:
     """Sorts list of integers using the LSD Radixsort algorithm"""
