@@ -18,7 +18,7 @@ for algorithm in algorithms:
         avg_time = sum(times) / decimal.Decimal(len(times))
         fastest = min(times)
         slowest = max(times)
-        standard_deviation = numpy.std(times)
+        standard_deviation = numpy.std(times, ddof=1)
         with open(f"./log/times_{algorithm}.csv", "a") as file:
             file.write(f"{list_type};{avg_time};{fastest};{slowest};{standard_deviation}\n")
         
